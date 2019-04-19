@@ -12,5 +12,13 @@
     "shinkei"
   ],
   "author": "Jorge I. Ramírez <ing.jorgeivanramirezh@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shinkei/shinkei-react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shinkei/shinkei-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Shinkei/shinkei-react-boilerplate#readme"
 }
