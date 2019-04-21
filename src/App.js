@@ -1,4 +1,5 @@
 import React from 'react';
+import { hot } from 'react-hot-loader'; // this loader is only for development so remove it for production releases
 
 class App extends React.Component {
   render() {
@@ -8,4 +9,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default hot(module)(App);
