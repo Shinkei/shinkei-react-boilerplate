@@ -1,6 +1,6 @@
 {
   "name": "react-shinkei-boilerplate",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "React boilerplate project",
   "main": "index.js",
   "scripts": {
