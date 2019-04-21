@@ -1,3 +1,3 @@
 import sayHello from './sayHello';
 
-console.log(sayHello);
+console.log(sayHello('chimi'));
