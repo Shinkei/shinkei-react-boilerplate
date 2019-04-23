@@ -32,8 +32,8 @@ class App extends React.Component {
       <>
         <h1>Hello React :)</h1>
         <h3>{count}</h3>
-        <button onClick={this.handleIncrease}>+</button>
         <button onClick={this.handleDecrease}>-</button>
+        <button onClick={this.handleIncrease}>+</button>
         {count > 10 ?
         <React.Suspense fallback={null}>
           <Warning />
