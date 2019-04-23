@@ -10,21 +10,20 @@ class App extends React.Component {
     this.handleIncrease = this.handleIncrease.bind(this);
     this.state = {
       count: 0
-    }
+    };
   }
 
   handleIncrease() {
-    this.setState((oldState) => ({
+    this.setState(oldState => ({
       count: oldState.count + 1
     }));
   }
 
   handleDecrease() {
-    this.setState((oldState) => ({
+    this.setState(oldState => ({
       count: oldState.count - 1
     }));
   }
-
 
   render() {
     const { count } = this.state;
@@ -32,13 +31,17 @@ class App extends React.Component {
       <>
         <h1>Hello React :)</h1>
         <h3>{count}</h3>
-        <button onClick={this.handleDecrease}>-</button>
-        <button onClick={this.handleIncrease}>+</button>
-        {count > 10 ?
-        <React.Suspense fallback={null}>
-          <Warning />
-        </React.Suspense>
-        : null}
+        <button type="button" onClick={this.handleDecrease}>
+          -
+        </button>
+        <button type="button" onClick={this.handleIncrease}>
+          +
+        </button>
+        {count > 10 ? (
+          <React.Suspense fallback={null}>
+            <Warning />
+          </React.Suspense>
+        ) : null}
       </>
     );
   }
